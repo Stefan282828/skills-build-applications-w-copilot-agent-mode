@@ -9,7 +9,7 @@ function Users() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        console.log('Fetching users from /users/ endpoint');
+        console.log('Fetching users from /users/ endpoint. Codespaces pattern: -8000.app.github.dev/api/users');
         const data = await fetchEndpoint('/users/');
         setUsers(data);
         setLoading(false);

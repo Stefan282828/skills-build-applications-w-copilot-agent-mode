@@ -9,7 +9,7 @@ function Leaderboard() {
   useEffect(() => {
     const fetchLeaderboards = async () => {
       try {
-        console.log('Fetching leaderboards from /leaderboards/ endpoint');
+        console.log('Fetching leaderboards from /leaderboards/ endpoint. Codespaces pattern: -8000.app.github.dev/api/leaderboards');
         const data = await fetchEndpoint('/leaderboards/');
         setLeaderboards(data);
         setLoading(false);

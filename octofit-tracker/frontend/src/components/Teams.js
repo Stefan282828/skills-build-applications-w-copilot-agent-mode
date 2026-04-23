@@ -9,7 +9,7 @@ function Teams() {
   useEffect(() => {
     const fetchTeams = async () => {
       try {
-        console.log('Fetching teams from /teams/ endpoint');
+        console.log('Fetching teams from /teams/ endpoint. Codespaces pattern: -8000.app.github.dev/api/teams');
         const data = await fetchEndpoint('/teams/');
         setTeams(data);
         setLoading(false);

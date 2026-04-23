@@ -9,7 +9,7 @@ function Workouts() {
   useEffect(() => {
     const fetchWorkouts = async () => {
       try {
-        console.log('Fetching workouts from /workouts/ endpoint');
+        console.log('Fetching workouts from /workouts/ endpoint. Codespaces pattern: -8000.app.github.dev/api/workouts');
         const data = await fetchEndpoint('/workouts/');
         setWorkouts(data);
         setLoading(false);
