@@ -9,7 +9,7 @@ function Activities() {
   useEffect(() => {
     const fetchActivities = async () => {
       try {
-        console.log('Fetching activities from /activities/ endpoint');
+        console.log('Fetching activities from /activities/ endpoint. Codespaces pattern: -8000.app.github.dev/api/activities');
         const data = await fetchEndpoint('/activities/');
         setActivities(data);
         setLoading(false);
